@@ -12,6 +12,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
+import org.hibernate.validator.NotEmpty;
 import org.joda.time.LocalDate;
 import org.joda.time.LocalTime;
 
@@ -22,8 +23,10 @@ public class Espetaculo {
 	@GeneratedValue
 	private Long id;
 
+	@NotEmpty
 	private String nome;
 
+	@NotEmpty
 	private String descricao;
 
 	@Enumerated(EnumType.STRING)
