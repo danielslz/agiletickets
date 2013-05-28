@@ -31,7 +31,6 @@ public class SessaoTest {
 		Assert.assertTrue(sessao.podeReservar(3));
 	}
 	
-	
 	@Test
 	public void reservarIngressosDeveDiminuirONumeroDeIngressosDisponiveis() throws Exception {
 		sessao.setTotalIngressos(5);
